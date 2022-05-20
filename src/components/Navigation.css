@@ -1,0 +1,204 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+/********** FONTS  **********/
+@font-face {
+    font-family: wsemi;
+    src: url('../assests/fonts/WorkSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: wreg;
+    src: url('../assests/fonts/WorkSans-Regular.ttf');
+}
+
+    /******** UNIVERSAL / ********/
+
+ul{
+    margin: 0; 
+    /* padding: 0; */
+}
+a,a:hover{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #ffffff;
+}
+
+.cover{
+    background-image: url('../assests/images/shape-1.png');
+    background-repeat: no-repeat;
+    /* overflow: show; */
+    min-height: 100vh;
+    background-size: contain;
+    background-position: right;
+    position: relative;
+}
+
+nav{
+    height: 120px;
+    padding:0 5%;
+     display: flex;
+    align-items: center; 
+    /* border: 1px solid black; */
+}
+.nav-contents{
+    margin-right: auto;
+    margin-left: 100px;
+}
+#list li{
+    display: inline-block;
+    /* border: 1px solid black; */
+    margin-right: 25px;
+}
+#list li a{
+    font-size: 18px;
+    font-family: wsemi;
+    color: rgb(49, 69, 132);
+    font-weight: bold;
+    position: relative;
+}
+#list li a::after{
+    content: '';
+    position: absolute;
+    /* right: 0; */
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+#list li a:hover::after{
+    width: 100%;
+}
+.cont-btn{
+    box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
+    width: 201px;
+    height: 61px;
+    font-family: wsemi;
+    color: red;
+    position: relative;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.cont-btn:hover{
+    background-color:rgb(255, 57, 70);
+    color: #fff;
+    transition: 1s all ease;
+}
+.fa-arrow-right-long{
+    font-size: 20px;
+    margin-left: 7px;
+    position: relative;
+    top: 2px;
+}
+.fa-times{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
+
+@media (min-width:768px) and (max-width:991px){
+    nav{
+        padding:0 4%;
+    }
+    .nav-contents{
+        margin-left: 50px;
+    }
+    #list li{
+        margin-right: 20px;
+    }
+    #list li a{
+        font-size: 16px;
+    }
+    .cont-btn{
+        width: 140px;
+        height: 61px;
+        font-family: wsemi;
+        color: red;
+        position: relative;
+        font-size: 16px;
+        background-color: #fff;
+    }
+    .fa-arrow-right-long{
+        font-size: 16px;
+        margin-left: 5px;
+        position: relative;
+        top: 2px;
+    }
+
+}
+
+@media  (max-width:767px){
+    .fa-times{
+       display: block;
+       position: absolute;
+       top: 30px;
+       right: 50px;
+       font-size: 20px;
+    }
+    .fa-bars{
+        display: block;
+        /* margin-left: 50%; */
+        font-size: 20px;
+    }
+    .nav-contents{
+        margin-left: 40px;
+    }
+    #list{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh; 
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        background-color: #fff;
+        transition: 1s ease;
+        padding: 0;
+        padding-top: 50px;
+    }
+    #list li{
+        display: block;
+        font-size: 20px;
+        color: rgb(36, 47, 81); font-family: preg;
+        margin: 25px; text-align: center;
+        /* text-align: center; */
+    }
+    #list li a{
+        font-size: 18px;
+    }
+
+    #list li a::after{
+        content: '';
+        position: absolute;
+        /* right: 0; */
+        left: 1.5%;
+        width: 0%;
+        height: 2px;
+        background-color: red;
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    #list li a:hover::after{
+        width: 100%;
+    }
+
+}
+@media  (max-width:370px){
+    .cont-btn{
+        box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
+        width: 150px;
+        height: 61px;
+        font-family: wsemi;
+        color: red;
+        position: relative;
+        font-size: 16px;
+        background-color: #fff;
+    }
+}

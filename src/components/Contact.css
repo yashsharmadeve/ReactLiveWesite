@@ -1,0 +1,34 @@
+.Contact-btn,.Contact-btn:hover{
+    background-color: rgb(255, 57, 70);
+    box-shadow: 0px 5px 10px 0px rgba(255, 57, 70, 0.15);
+    width: 201px;
+    height: 56px;
+    font-size: 18px;
+    font-family: wsemi;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+input,textarea{
+    font-size: 18px;
+    font-family:wsemi;
+    color: rgb(49, 69, 132);
+    font-weight: bold;
+    /* background-color: rgb(244, 250, 254); */
+    background-color: red;
+}
+input{
+    height: 61px;
+    /* outline: none; */
+}
+.contact-input,.contact-input:focus{
+    background-color: rgb(244, 250, 254);
+    /* outline: none; */
+}
+.contact-required-class{
+    color: rgb(255, 57, 70);
+    font-family: wsemi;
+    font-size: 16px;
+    margin-top: 4px;
+}

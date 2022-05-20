@@ -1,0 +1,51 @@
+.Foot-mar{
+    margin-top: 100px;
+    background-color: rgb(49, 69, 132);
+    padding: 70px 0 50px 0;
+}
+#foot-list{
+    margin: 30px 0 50px;
+}
+#foot-list li{
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+}
+.foot-row h5{
+    font-size: 18px;
+    font-family: wsemi;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.153;
+}
+.foot-row h2{
+    font-size: 48.425px;
+    font-family: wsemi;
+    color: rgb(255, 57, 70);
+    font-weight: bold;
+    line-height: 1.239;
+}
+#foot-list li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: wsemi;
+    font-weight: bold;
+    line-height: 1.153;
+}.copy{
+    font-size: 14px;
+    font-family: wreg;
+    color: rgb(255, 255, 255);
+    line-height: 1.483;
+}
+.foot-icon i{
+    font-size: 30px;
+    color: #fff;
+    margin: 0 20px;
+    margin-top: 30px;
+}
+
+@media (max-width:767px){
+    #foot-list li{
+        margin: 0 15px;
+    }
+}
