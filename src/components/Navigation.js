@@ -18,6 +18,9 @@ const Navigation = () =>{
     return(
         <div>
             <div className="cover">
+                <div className='top-bar text-center bg-primary text-white'>
+                    React Live Website
+                </div>
                 <div className="header">
                     <nav className="navi">
                         <a href="index.html" className="navbar-logo">
